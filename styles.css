@@ -48,31 +48,157 @@ body {
     text-align: center;
 }
 
+/* Dream Section - Responsive */
 .dream-section {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            flex-direction:row;
-            background-color: #f8f9fa;
-            padding: 80px 0;
-            font-family: 'Arial', sans-serif;
-            
-            .btn-dream-button:hover {
-                background-color: #e56e00;
-                border-color: #e56e00;
-                transform: translateY(-3px);
-                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-                    }
-                    .btn-dream-button {
-                background-color: var(--primary-color);
-                border-color: var(--primary-color);
-                color: var(--secondary-color);
-                padding: 12px 30px;
-                font-weight: 600;
-                /* border-radius: 30px; */
-                transition: all 0.3s ease;
-                }
-            
+    background-color: #f8f9fa;
+    padding: 100px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.dream-subtitle {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.dream-title {
+    font-size: 3rem;
+    color: var(--dark-color);
+    margin-bottom: 0;
+    line-height: 1.2;
+}
+
+.dream-highlight {
+    font-size: 1.1rem;
+    color: var(--gray-color);
+    max-width: 500px;
+    line-height: 1.6;
+}
+
+.dream-image {
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.dream-image:hover {
+    transform: scale(1.02);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .dream-section {
+        padding: 80px 0;
+    }
+    
+    .dream-title {
+        font-size: 2.5rem;
+    }
+    
+    .dream-highlight {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .dream-section {
+        padding: 60px 0;
+        text-align: center;
+    }
+    
+    .dream-title {
+        font-size: 2rem;
+    }
+    
+    .dream-highlight {
+        font-size: 0.95rem;
+        margin: 0 auto;
+    }
+    
+    .dream-image {
+        margin-top: 40px;
+        max-width: 90%;
+    }
+    
+    .dream-section .row {
+        flex-direction: column;
+    }
+    
+    .dream-section .col-lg-6:first-child {
+        order: 2;
+    }
+    
+    .dream-section .col-lg-6:last-child {
+        order: 1;
+    }
+}
+
+@media (max-width: 576px) {
+    .dream-section {
+        padding: 50px 0;
+    }
+    
+    .dream-title {
+        font-size: 1.8rem;
+    }
+    
+    .dream-subtitle {
+        font-size: 1rem;
+    }
+    
+    .btn-primary-custom {
+        padding: 10px 25px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Additional Global Responsive Improvements */
+@media (max-width: 768px) {
+    .section-heading {
+        font-size: 1.8rem !important;
+    }
+    
+    .service-card,
+    .property-card,
+    .blog-card {
+        margin-bottom: 25px;
+    }
+    
+    .contact-form {
+        padding: 25px;
+        margin-top: 30px;
+    }
+    
+    .footer {
+        padding: 50px 0 20px;
+    }
+    
+    .navbar-brand {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    
+    .section-heading {
+        font-size: 1.6rem !important;
+    }
+    
+    .property-image,
+    .blog-image {
+        height: 200px;
+    }
 }
 
  .hero-section h1 {
